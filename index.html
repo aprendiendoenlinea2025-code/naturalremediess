@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Natural Healing Manual</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f3f9f6;
+    color: #111;
+    padding-bottom:55px;
+  }
+  .header-strip {
+    background: #006837;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+  }
+  .banner-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+  .banner-section img {
+    max-width: 400px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+  }
+  .banner-text {
+    max-width: 500px;
+  }
+  .label-tag {
+    display: inline-block;
+    background: #007a3d;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 26px;
+    margin: 10px 0;
+  }
+  .feature-list {
+    margin: 20px 0;
+    padding-left: 20px;
+  }
+  .feature-list li {
+    margin-bottom: 10px;
+    list-style: "✔ ";
+    color: #006837;
+  }
+  
+  
+  .action-btn {
+  display: inline-block;
+  background: linear-gradient(to bottom, #ffb347, #ff6a00);
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+ 
+  
+  
+  
+  
+   
+  .credibility {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #444;
+  }
+  
+ .action-btn.pulse-animation {
+  animation: heartbeat 5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%, 80%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 12px rgba(18,122,74,0.5);
+  }
+
+  10% {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(18,122,74,0.8);
+  }
+
+  20% {
+    transform: scale(0.96);
+    box-shadow: 0 0 10px rgba(18,122,74,0.4);
+  }
+
+  30% {
+    transform: scale(1.12);
+    box-shadow: 0 0 22px rgba(18,122,74,0.9);
+  }
+
+  40% {
+    transform: scale(1);
+    box-shadow: 0 0 12px rgba(18,122,74,0.5);
+  }
+}
+ .value-props {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background: #f8fcfa;
+  }
+  .value-card {
+    flex: 1 1 280px;
+    max-width: 320px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  }
+  .value-card h3 {
+    color: #004f27;
+    font-size: 18px;
+    margin: 15px 0 10px;
+  }
+  .value-card p {
+    color: #444;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .graphic {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+  .discovery { padding: 50px 20px; background: #fff; }
+  .discovery h2 {
+    text-align: center; font-size: 34px; line-height: 1.2;
+    margin: 0 0 30px; color: #0b1b14;
+  }
+  .discovery-container {
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px;
+    align-items: center;
+  }
+  .discovery-visual img {
+    width: 100%; height: auto; border-radius: 12px;
+    box-shadow: 0 10px 24px rgba(0,0,0,.12);
+  }
+  .discovery-items { display: flex; flex-direction: column; gap: 18px; }
+  .item-block { display: grid; grid-template-columns: 28px 1fr; gap: 12px; align-items: start; }
+  .item-block h3 { margin: 0 0 6px; font-size: 20px; color: #0f3d2b; }
+  .item-block p { margin: 0; color: #444; line-height: 1.6; font-size: 15px; }
+  .checkmark {
+    width: 24px; height: 24px; border-radius: 999px; display: inline-block;
+    background: #e8f5ee; border: 2px solid #13824f; position: relative;
+  }
+  .checkmark::after {
+    content: ""; position: absolute; left: 5px; top: 2px; width: 9px; height: 16px;
+    border-right: 3px solid #13824f; border-bottom: 3px solid #13824f;
+    transform: rotate(45deg);
+  }
+  .discovery-btn {
+    display: inline-block; margin-top: 14px; align-self: start;
+    background: #127a4a; color: #fff; text-decoration: none; font-weight: 800;
+    padding: 16px 26px; border-radius: 8px; box-shadow: 0 6px 0 #0e5e3a;
+    transition: transform .05s ease-in-out, box-shadow .05s ease-in-out;
+    text-align: center;
+  }
+  .discovery-btn:hover { transform: translateY(1px); box-shadow: 0 4px 0 #0e5e3a; }
+  @media (max-width: 900px) {
+    .discovery-container { grid-template-columns: 1fr; }
+    .discovery h2 { font-size: 28px; }
+  }
+  .botanical { padding: 60px 20px; background: #fff; }
+  .botanical-container {
+    max-width: 1150px; margin: 0 auto;
+    display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px;
+    align-items: start;
+  }
+  .botanical h2 {
+    font-size: 32px; margin-bottom: 14px; color: #0d1e12; line-height: 1.2;
+  }
+  .botanical p { color: #444; margin-bottom: 26px; font-size: 16px; line-height: 1.6; }
+  .item-block { display: grid; grid-template-columns: 28px 1fr; gap: 12px; margin-bottom: 18px; }
+  .item-block h3 { margin: 0 0 6px; font-size: 18px; color: #0f3d2b; }
+  .item-block p { margin: 0; font-size: 14px; line-height: 1.5; }
+  .checkmark {
+    width: 22px; height: 22px; border-radius: 50%; display: inline-block;
+    background: #e9f7ef; border: 2px solid #13824f; position: relative;
+  }
+  .checkmark::after {
+    content: ""; position: absolute; left: 5px; top: 2px;
+    width: 7px; height: 12px; border-right: 3px solid #13824f; border-bottom: 3px solid #13824f;
+    transform: rotate(45deg);
+  }
+  .botanical-visual img {
+    width: 100%; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,.12);
+  }
+  @media(max-width: 900px){
+    .botanical-container { grid-template-columns: 1fr; }
+    .botanical h2 { font-size: 26px; }
+  }
+   .challenges { padding: 60px 20px; background: #fff; }
+  .challenges-container {
+    max-width: 1150px; margin: 0 auto;
+    display: grid; grid-template-columns: .9fr 1.1fr; gap: 40px;
+    align-items: center;
+  }
+  .challenges-copy h2 {
+    font-size: 32px; line-height: 1.2; margin: 0 0 14px; color: #0b1b14;
+  }
+  .challenges-copy .intro-text {
+    font-size: 16px; line-height: 1.6; color: #555; margin: 0 0 24px;
+  }
+  .item-block {
+    display: grid; grid-template-columns: 28px 1fr;
+    gap: 12px; margin-bottom: 20px;
+  }
+  .item-block h3 { margin: 0 0 6px; font-size: 18px; color: #0f3d2b; }
+  .item-block p { margin: 0; font-size: 14px; line-height: 1.6; color: #444; }
+  .checkmark {
+    width: 22px; height: 22px; border-radius: 50%;
+    background: #e9f7ef; border: 2px solid #13824f; position: relative;
+  }
+  .checkmark::after {
+    content: ""; position: absolute; left: 5px; top: 3px;
+    width: 7px; height: 12px; border-right: 3px solid #13824f;
+    border-bottom: 3px solid #13824f; transform: rotate(45deg);
+  }
+  .challenges-visual img {
+    width: 100%; height: auto;
+    border-radius: 14px; box-shadow: 0 8px 20px rgba(0,0,0,.12);
+  }
+  @media(max-width: 900px){
+    .challenges-container { grid-template-columns: 1fr; }
+    .challenges-copy h2 { font-size: 26px; }
+  }
+   .renewal{ padding:60px 20px; background:#ffffff; }
+  .renewal-container{
+    max-width:1150px; margin:0 auto;
+    display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:center;
+  }
+  .renewal-copy h2{ font-size:36px; line-height:1.2; margin:0 0 12px; color:#0b1b14; }
+  .renewal-copy .intro-text{ color:#66727a; font-size:16px; line-height:1.7; margin:0 0 22px; }
+  .renewal-item{ display:grid; grid-template-columns:28px 1fr; gap:12px; margin:16px 0; }
+  .renewal-item h3{ margin:0 0 6px; font-size:19px; color:#0f3d2b; }
+  .renewal-item p{ margin:0; color:#424b4f; line-height:1.6; font-size:15px; }
+  .renewal-mark{
+    width:24px; height:24px; border-radius:50%;
+    background:#e8f5ee; border:2px solid #13824f; display:inline-block; position:relative;
+  }
+  .renewal-mark::after{
+    content:""; position:absolute; left:5px; top:3px; width:8px; height:14px;
+    border-right:3px solid #13824f; border-bottom:3px solid #13824f; transform:rotate(45deg);
+  }
+  .renewal-btn{
+    display:inline-block; margin-top:20px; background:#127a4a; color:#fff; text-decoration:none;
+    font-weight:800; padding:16px 28px; border-radius:10px; box-shadow:0 6px 0 #0e5e3a;
+    transition:transform .06s ease, box-shadow .06s ease;
+  }
+  .renewal-btn:hover{ transform:translateY(1px); box-shadow:0 4px 0 #0e5e3a; }
+  .renewal-visual img{ width:100%; height:auto; border-radius:14px; box-shadow:0 10px 24px rgba(0,0,0,.12); }
+  @media (max-width: 900px){
+    .renewal-container{ grid-template-columns:1fr; }
+    .renewal-copy h2{ font-size:28px; }
+  }
+  .credibility-section { padding: 60px 20px; background: #fff; }
+  .credibility-container {
+    max-width: 1150px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; align-items: center;
+  }
+  .credibility-copy h2 {
+    font-size: 30px; margin-bottom: 24px;
+    line-height: 1.3; color: #0b1b14;
+  }
+  .item-block {
+    display: grid; grid-template-columns: 28px 1fr;
+    gap: 12px; margin-bottom: 20px;
+  }
+  .item-block h3 { margin: 0 0 6px; font-size: 18px; color: #0f3d2b; }
+  .item-block p { margin: 0; font-size: 14px; line-height: 1.6; color: #444; }
+  .checkmark {
+    width: 22px; height: 22px; border-radius: 50%;
+    background: #e9f7ef; border: 2px solid #13824f; position: relative;
+  }
+  .checkmark::after {
+    content: ""; position: absolute; left: 5px; top: 3px;
+    width: 7px; height: 12px; border-right: 3px solid #13824f;
+    border-bottom: 3px solid #13824f; transform: rotate(45deg);
+  }
+  .credibility-visual img {
+    width: 100%; height: auto; border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+  }
+  @media(max-width: 900px){
+    .credibility-container { grid-template-columns: 1fr; }
+    .credibility-copy h2 { font-size: 24px; }
+  }
+   .distinctive{
+    padding: 64px 20px; background:#f3faf6;
+  }
+  .distinctive h2{
+    text-align:center; font-size:34px; line-height:1.2; margin:0 0 14px; color:#0b1b14;
+  }
+  .distinctive-intro{
+    max-width:950px; margin:0 auto 28px; text-align:center; color:#334; line-height:1.7; font-size:16px;
+  }
+  .distinctive-grid{
+    max-width:1200px; margin:0 auto;
+    display:grid; grid-template-columns:repeat(4,1fr); gap:22px;
+  }
+  .distinctive-card{
+    background:#fff; border-radius:14px; padding:26px 20px; text-align:center;
+    box-shadow:0 6px 18px rgba(0,0,0,.06); border:1px solid #e6efe9;
+  }
+  .distinctive-icon{
+    width:72px; height:72px; margin:0 auto 14px; border-radius:50%;
+    background:# ; display:grid; place-items:center;
+  }
+  .distinctive-icon img{ width:34px; height:34px; object-fit:contain; }
+  .distinctive-card h3{ margin:6px 0 10px; color:#0f3d2b; font-size:20px; }
+  .distinctive-card p{ margin:0; color:#445; line-height:1.6; font-size:15px; }
+  @media (max-width: 1000px){
+    .distinctive-grid{ grid-template-columns:repeat(2,1fr); }
+  }
+  @media (max-width: 560px){
+    .distinctive h2{ font-size:26px; }
+    .distinctive-grid{ grid-template-columns:1fr; }
+  }
+   .alert-signals { padding: 70px 20px; background:#fff; text-align:center; }
+  .alert-signals h2 { font-size:32px; line-height:1.3; color:#0b1b14; margin-bottom:14px; }
+  .alert-signals .intro-text { font-size:16px; color:#555; margin:0 auto 34px; max-width:820px; }
+  .alert-grid {
+    max-width:1150px; margin:0 auto 40px;
+    display:grid; grid-template-columns:1fr 1fr; gap:26px;
+    text-align:left;
+  }
+  .alert-column {
+    border-radius:12px; padding:24px; box-shadow:0 6px 16px rgba(0,0,0,.07);
+  }
+  .alert-column.positive { background:#f1fbf5; border:2px solid #0c7a42; }
+  .alert-column.negative { background:#fdf4f4; border:2px solid #c9302c; }
+  .alert-column h3 { margin-top:0; font-size:18px; margin-bottom:18px; }
+  .alert-column ul { margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:14px; }
+  .alert-column li { font-size:14px; line-height:1.6; color:#333; }
+  /* Media query para mobile */
+@media (max-width: 768px) {
+  .alert-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .alert-signals h2 {
+    font-size: 24px;
+  }
+  
+  .alert-signals .intro-text {
+    font-size: 15px;
+  }
+}
+
+  .checkmark, .xmark {
+    width:18px; height:18px; border-radius:50%; display:inline-block; margin-right:8px; vertical-align:middle; position:relative;
+  }
+  .checkmark { background:#e9f7ef; border:2px solid #13824f; }
+  .checkmark::after {
+    content:""; position:absolute; left:4px; top:1px; width:6px; height:10px;
+    border-right:2px solid #13824f; border-bottom:2px solid #13824f; transform:rotate(45deg);
+  }
+  .xmark { background:#fdecec; border:2px solid #c9302c; }
+  .xmark::after {
+    content:""; position:absolute; left:3px; top:3px; width:8px; height:8px;
+    border-right:2px solid #c9302c; border-top:2px solid #c9302c; transform:rotate(135deg);
+  }
+  .reversible { font-size:15px; margin:14px 0 18px; color:#222; }
+  .emphasis-box {
+    background:#e7f4ec; color:#0f3d2b; padding:14px 20px; border-radius:8px;
+    max-width:800px; margin:0 auto 28px; font-size:15px;
+  }
+  .action-btn {
+    display:inline-block; background: linear-gradient(to bottom, #ffb347, #ff6a00); color:#fff; text-decoration:none;
+    padding:16px 28px; border-radius:10px; font-weight:800;
+    box-shadow:0 6px 0 #0e5e3a; transition:transform .06s ease, box-shadow .06s ease;
+  }
+  .deal { padding: 70px 20px; background:#f3faf6; text-align:center; }
+  .deal h2 { font-size:32px; margin-bottom:30px; color:#0b1b14; }
+  .deal-container {
+    max-width:800px; margin:0 auto; background:#fff; border:2px solid #0c7a42;
+    border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,.08); overflow:hidden;
+  }
+  .deal-banner {
+    background:#0c7a42; color:#fff; font-weight:700; font-size:16px;
+    padding:12px; text-transform:uppercase;
+  }
+  .deal-body { display:flex; flex-wrap:wrap; padding:24px; text-align:left; gap:20px; }
+  .deal-visual { width:200px; height:auto; margin:auto; }
+  .deal-copy { flex:1; }
+  .deal-copy h3 { font-size:22px; margin:0 0 4px; }
+  .deal-copy .subheading { font-size:14px; color:#666; margin:0 0 18px; }
+  .deal-copy h4 { font-size:16px; margin-bottom:14px; color:#0f3d2b; }
+  .deal-copy ul { list-style:none; padding:0; margin:0 0 20px; display:flex; flex-direction:column; gap:12px; }
+  .deal-copy li { font-size:14px; line-height:1.5; }
+  .checkmark {
+    width:18px; height:18px; border-radius:50%; display:inline-block;
+    background:#e9f7ef; border:2px solid #13824f; position:relative; margin-right:6px; vertical-align:middle;
+  }
+  .checkmark::after {
+    content:""; position:absolute; left:4px; top:1px; width:6px; height:10px;
+    border-right:2px solid #13824f; border-bottom:2px solid #13824f; transform:rotate(45deg);
+  }
+  .price { font-size:16px; margin:20px 0 10px; }
+  .price .current-price { font-size:20px; font-weight:700; color:#0c7a42; }
+  .price .original-price { font-size:14px; color:#999; }
+  .urgency { font-size:14px; font-weight:600; color:#b32626; margin-bottom:18px; }
+  
+  .action-btn:hover { transform:translateY(1px); box-shadow:0 4px 0 #0e5e3a; }
+  .payment-logos { margin:20px 0 6px; display:flex; justify-content:center; gap:14px; flex-wrap:wrap; }
+  .payment-logos img { height:28px; }
+  .security-note { font-size:13px; color:#555; text-align:center; }
+  @media(max-width:700px){
+    .deal-body{ flex-direction:column; align-items:center; text-align:center; }
+    .deal-copy{ text-align:center; }
+    .deal-visual{ margin-bottom:16px; }
+  }
+   .elements {
+    padding: 70px 20px; background: #f3faf6; text-align: center;
+  }
+  .elements h2 {
+    font-size: 32px; color: #0b1b14; margin-bottom: 14px; line-height: 1.3;
+  }
+  .elements .intro-text {
+    max-width: 900px; margin: 0 auto 36px;
+    color: #444; font-size: 16px; line-height: 1.6;
+  }
+  .elements-grid {
+    max-width: 1150px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+  }
+  .elements-card {
+    background: #fff; border-radius: 12px; padding: 20px;
+    box-shadow: 0 6px 16px rgba(0,0,0,.06); text-align: left;
+  }
+  .elements-card h3 {
+    font-size: 18px; margin: 0 0 8px; color: #0f3d2b;
+  }
+  .elements-card p {
+    margin: 0; font-size: 14px; line-height: 1.5; color: #444;
+  }
+  .additional {
+    margin-top: 28px; font-size: 15px; color: #0f3d2b;
+    font-weight: 600;
+  }
+  @media (max-width: 900px) {
+    .elements-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
+    .elements-grid { grid-template-columns: 1fr; }
+    .elements h2 { font-size: 26px; }
+  }
+  .extras{
+    padding:64px 20px; background:#f3faf6; text-align:center;
+  }
+  .extras h2{
+    font-size:32px; margin:0; color:#0b1b14; line-height:1.2;
+  }
+  .extras .subtitle-text{
+    margin:6px 0 28px; font-size:22px; color:#127a4a;
+  }
+
+  .extras-grid{
+    max-width:1100px; margin:0 auto;
+    display:grid; grid-template-columns:1fr 1fr; gap:24px;
+  }
+  .extras-card{
+    background:#fff; border-radius:14px; padding:24px;
+    box-shadow:0 10px 22px rgba(0,0,0,.06); border:1px solid #e6efe9;
+    text-align:center;
+  }
+  .extras-badge{
+    display:inline-block; background:#e8f5ee; color:#127a4a; font-weight:700;
+    padding:6px 12px; border-radius:999px; font-size:13px; margin-bottom:10px;
+  }
+  .extras-card h3{
+    margin:0 0 12px; font-size:20px; color:#0f3d2b;
+  }
+  .extras-mockup{
+    background:#f7fbf8; border:1px solid #e6efe9; border-radius:12px;
+    padding:14px; margin:0 auto 14px; max-width:360px;
+    box-shadow:0 6px 14px rgba(0,0,0,.05);
+  }
+  .extras-mockup img{ width:100%; height:auto; display:block; border-radius:8px; }
+
+  .extras-card p{
+    margin:0 0 16px; color:#444; font-size:15px; line-height:1.65; text-align:left;
+  }
+  .value-tag{
+    display:inline-block; background:#1e7f51; color:#fff; font-weight:800;
+    padding:10px 18px; border-radius:999px; box-shadow:0 4px 0 #0e5e3a;
+    font-size:15px;
+  }
+
+  @media (max-width: 900px){
+    .extras-grid{ grid-template-columns:1fr; }
+    .extras h2{ font-size:26px; }
+  }
+  .promise{
+    background:#f3faf6; padding:50px 20px;
+  }
+  .promise-container{
+    max-width:950px; margin:0 auto;
+    display:grid; grid-template-columns:120px 1fr; gap:26px;
+    align-items:center; background:#fff; border-radius:12px;
+    padding:26px; box-shadow:0 8px 20px rgba(0,0,0,.08);
+  }
+  .promise-badge img{
+    width:100%; height:auto;  
+  }
+  .promise-copy h3{
+    margin:0 0 12px; font-size:20px; color:#0c7a42;
+  }
+  .promise-copy p{
+    margin:0 0 12px; font-size:15px; line-height:1.6; color:#444;
+  }
+  @media(max-width: 700px){
+    .promise-container{ grid-template-columns:1fr; text-align:center; }
+    .promise-badge{ margin:0 auto 16px; }
+  }
+  .questions{
+    padding:64px 20px; background:#f3faf6;
+    --ink:#0b1b14; --muted:#54636a; --brand:#127a4a; --card:#ffffff; --stroke:#e2eee7;
+  }
+  .questions h2{
+    text-align:center; color:var(--ink); font-size:32px; margin:0 0 22px;
+  }
+
+  .question-item{
+    max-width:950px; margin:12px auto; background:var(--card);
+    border:1px solid var(--stroke); border-radius:10px; overflow:hidden;
+  }
+
+  .question-item > summary{
+    list-style:none; cursor:pointer; padding:16px 20px;
+    font-weight:700; color:#fff; background:var(--brand);
+    display:flex; align-items:center; gap:12px; position:relative;
+  }
+  .question-item > summary::-webkit-details-marker{ display:none; }
+
+  .question-item > summary::after{
+    content:"▾"; font-size:16px; margin-left:auto; transform:rotate(0deg);
+    transition:transform .2s ease;
+  }
+  .question-item[open] > summary::after{ transform:rotate(-180deg); }
+
+  .question-item .response-text{
+    padding:16px 20px; color:#2e3a3f; line-height:1.7; background:#ffffff;
+    border-top:1px solid var(--stroke);
+  }
+
+  .question-item .response-text b{ color:#0f3d2b; }
+  .question-item .response-text em{ font-style:italic; }
+
+  @media (max-width: 560px){
+    .questions h2{ font-size:26px; }
+    .question-item > summary{ padding:14px 16px; }
+    .question-item .response-text{ padding:14px 16px; }
+  }
+  .finale {
+    background:#e8f2ea; padding:70px 20px; text-align:center;
+  }
+  .finale h2 {
+    font-size:32px; color:#0b1b14; margin-bottom:18px; line-height:1.3;
+  }
+  .finale p { font-size:16px; color:#333; margin:10px 0; line-height:1.6; }
+  .finale .emphasized { margin:26px 0 32px; font-size:18px; font-weight:500; }
+  .finale h3 { font-size:22px; margin-bottom:20px; }
+ 
+   .benefits-note {
+    margin-top:18px; font-size:14px; font-weight:600; color:#0f3d2b;
+  }
+  .legal-note {
+    margin-top:26px; font-size:12px; color:#555; max-width:820px; margin-left:auto; margin-right:auto;
+    line-height:1.5;
+  }
+  @media(max-width: 600px){
+    .finale h2 { font-size:26px; }
+    .finale h3 { font-size:20px; }
+    .action-btn { font-size:14px; padding:14px 24px; }
+  }
+  
+  
+  /* CSS - Agregar/modificar */
+.mobile-sticky-cta {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:#19a463;
+  padding: 10px 16px 12px;
+  box-shadow: 0 -4px 12px rgba(0,0,0,.2);
+  z-index: 9999;
+  box-sizing: border-box;
+  transform: translateY(100%);
+  transition: transform 0.4s ease-out;
+}
+
+.mobile-sticky-cta.show {
+  transform: translateY(0);
+}
+
+.countdown-timer {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+}
+
+.countdown-timer #timer {
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.sticky-cta-button {
+  display: block;
+  width: 100%;
+  background: linear-gradient(to bottom, #ffb347, #ff6a00);
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  padding: 14px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.2);
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sticky-cta-button:hover {
+  background: linear-gradient(to bottom, #ffa033, #e65c00);
+}
+
+@media (max-width: 768px) {
+  .mobile-sticky-cta {
+    display: block;
+  }
+}
+
+ /* CSS - Reemplazar la sección de .social-proof-notification */
+.social-proof-notification {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.15);
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 320px;
+  z-index: 9998;
+  transform: translateY(120%);
+  opacity: 0;
+  transition: all 0.4s ease-out;
+  border-left: 4px solid #2a6f3a;
+}
+
+.social-proof-notification.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.proof-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.proof-icon {
+  width: 36px;
+  height: 36px;
+  background: #2a6f3a;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.proof-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.proof-name {
+  font-weight: 600;
+  color: #19a463;
+  font-size: 14px;
+}
+
+.proof-details {
+  color: #5b686e;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .social-proof-notification {
+    left: 10px;
+    right: 10px;
+    max-width: calc(100% - 20px);
+    bottom: 140px; /* Aumentado de 90px a 140px */
+  }
+}
+  
+
+
+
+</style>
+</head>
+<body>
+<div class="header-strip">Exclusive for Today: Special Offer + Free Bonuses — Limited Availability | Only<span class="price-off"></span>| Over 50,000 copies sold | Instant access via email</div>
+<section class="banner-section">
+<img alt="Cover of the Ancestral Herbs Manual" src="/lander/hierbas-curativas_1767987763/img/foto1.webp"/>
+<div class="banner-text">
+<span class="label-tag">BEST SELLER</span>
+<h1>The Digital Manual of<span class="price-off"></span>which is changing the lives of thousands over 50 — they sleep better, suffer less, and reclaim the energy they thought was lost</h1>
+<p>Access over 200 precise and verified herbal formulas with ingredients you have at home — garlic, ginger, lemon, and more — scientifically validated, chosen by over 50,000 people, available on your mobile or PC.</p>
+<ul class="feature-list">
+<li>Effective solutions for pain, fatigue, high glucose, mental fog, and more</li>
+<li>Step-by-step instructions with common pantry ingredients</li>
+<li>Over 90 pages filled with botanical combinations</li>
+<li>Includes FREE EXTRAS + 60-day full guarantee</li>
+</ul>
+<a class="action-btn pulse-animation cta-button" href="">👉 YES — I WANT ACCESS TO MY REMEDIES NOW</a>
+<p class="credibility">Over 50,000 people are already using it to feel better</p> </div>
+</section>
+<section class="value-props">
+<div class="value-card">
+<img alt="No-risk guarantee seal" class="graphic" src="/lander/hierbas-curativas_1767987763/img/1.webp"/>
+<h3>Risk-Free Trial for 60 Days</h3>
+<p>If you don't experience improvements in your well-being, mental clarity, or control over your health, you get your full investment back. No questions asked, no complications.</p>
+</div>
+<div class="value-card">
+<img alt="Immediate digital delivery" class="graphic" src="/lander/hierbas-curativas_1767987763/img/2.webp"/>
+<h3>Instant access via email</h3>
+<p>So you can start improving your rest, sleep deeply, and heal naturally right away.</p>
+</div>
+<div class="value-card">
+<img alt="Proven herbal treatments" class="graphic" src="/lander/hierbas-curativas_1767987763/img/3.webp"/>
+<h3>100+ Validated treatments with home ingredients</h3>
+<p>Applied by over 50,000 people over 50 to relieve discomfort, boost energy, and regain autonomy — naturally.</p>
+</div>
+</section>
+<section class="discovery">
+<h2>What you'll discover inside the<em>Ancestral Herbs Manual</em></h2>
+<div class="discovery-container">
+<div class="discovery-visual">
+<img alt="Inner pages of the manual with herbal remedies" src="/lander/hierbas-curativas_1767987763/img/foto2.webp"/>
+</div>
+<div class="discovery-items">
+<div class="item-block">
+<span class="checkmark"></span>
+<div>
+<h3>Remedies with things you already have at home</h3>
+<p>Learn to combine garlic, lemon, ginger, and other common plants in exact recipes that soothe pain, reduce inflammation, and restore your energy. No side effects.</p>
+</div>
+</div>
+<div class="item-block">
+<span class="checkmark"></span>
+<div>
+<h3>Attack the cause, not just the symptom</h3>
+<p>Discover what is truly causing your pain, fatigue, insomnia, or high sugar — and how to solve it with ingredients from your kitchen.</p>
+</div>
+</div>
+<div class="item-block">
+<span class="checkmark"></span>
+<div>
+<h3>Simple routines you can do every day</h3>
+<p>Small natural habits that integrate into your day so you can sleep better, digest well, and wake up energized and with a clear mind.</p>
+</div>
+</div>
+<div class="item-block">
+<span class="checkmark"></span>
+<div>
+<h3>Which supplements are worth it and which are just a waste</h3>
+<p>Clear guide to the few natural supplements that really work — with exact doses and how to take them safely. The rest is tossing your money away.</p>
+</div>
+</div>
+<div class="item-block">
+<span class="checkmark"></span>
+<div>
+<h3>Centuries-tested remedies, not TikTok fads</h3>
+<p>These formulas have been healing people for hundreds of years and are backed by modern science. They are not passing trends — they are what really works.</p>
+</div>
+</div>
+<a class="action-btn pulse-animation cta-button" href="">👉 YES, I WANT MY MANUAL NOW</a>
+</div>
+</div>
+</section>
+<section class="botanical">
+<div class="botanical-container">
+<div class="botanical-visual">
+<img alt="Medicinal herbs and spices on a table" src="/lander/hierbas-curativas_1767987763/img/foto3.webp"/>
+</div>
+<div class="herbs-text">
+<h2>You've been using these plants the wrong way...</h2>
+<p>With minimal adjustments, you'll have powerful results. These common ingredients have healing capabilities… only if you know how to activate them.</p>
+<div class="item-block">
+<span class="checkmark"></span>
+<div>
+<h3>The 15-minute garlic protocol</h3>
+<p>A pre-preparation that amplifies garlic’s effect on blood pressure, inflammation, and cardiovascular health.</p>
+</div>
+</div>
+<div class="item-block">
+<span class="checkmark"></span>
+<div>
+<h3>The common mistake with turmeric</h3>
+<p>Taking turmeric alone is almost useless — but if you combine it with this spice that you already have at home, you multiply its effect by 20</p>
+</div>
+</div>
+<div class="item-block">
+<span class="checkmark"></span>
+<div>
+<h3>The hidden anti-inflammatory in your garden</h3>
+<p>It's unknown by most… but this herb can relieve joint pain faster than your usual painkillers.</p>
+</div>
+</div>
+<div class="item-block">
+<span class="checkmark"></span>
+<div>
+<h3>The herbal sleep regulator</h3>
+<p>The blend of 2 plants that transforms your nervous system from tension to relaxation — naturally and consistently.</p>
+</div>
+</div>
+<div class="item-block">
+<span class="checkmark"></span>
+<div>
+<h3>The key against discomfort</h3>
+<p>How the union of two recognized herbs generates relief comparable to drugs — without adverse consequences.</p>
+</div>
+</div>
+<div class="item-block">
+<span class="checkmark"></span>
+<div>
+<h3>Healing power spice tonics</h3>
+<p>What happens when you combine cinnamon, citrus, and oil? A therapeutic preparation that boosts immunity, energy, and digestion.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="challenges">
+<div class="challenges-container">
+<div class="challenges-visual">
+<img alt="Pharmaceuticals and supplements" src="/lander/hierbas-curativas_1767987763/img/foto4.webp"/>
+</div>
+<div class="challenges-copy">
+<h2>Are you still relying on medications… while underlying problems progress?</h2>
+<p class="intro-text">You calm the symptoms. But… what if the root of the problem keeps growing without you noticing?</p>
+<div class="item-block">
+<span class="checkmark"></span>
+<div>
+<h3>Postponing = Deterioration</h3>
+<p>That persistent discomfort in your back or knees is not "a matter of years." It's inflammation — and it's causing arthritis, fatigue, and strain on vital organs. Waiting too long can make it irreversible.</p>
+</div>
+</div>
+<div class="item-block">
+<span class="checkmark"></span>
+<div>
+<h3>Mental fog/confusion is not inevitable</h3>
+<p>Are you losing concentration? Forgetting words? These are early warnings — not normal consequences of aging. Your body is unbalanced and needs your attention.</p>
+</div>
+</div>
+<div class="item-block">
+<span class="checkmark"></span>
+<div>
+<h3>One drug leads to another</h3>
+<p>You start with anti-inflammatories… add sleep inducers… then pressure regulators. Each brings adverse effects — dizziness, exhaustion, digestive disorders — until you end up trapped in an endless loop of pills.</p>
+</div>
+</div>
+<div class="item-block">
+<span class="checkmark"></span>
+<div>
+<h3>Break the pattern naturally</h3>
+<p>What if ginger relieved your discomfort? What if lemon helped your digestion? What if deep rest came without prescriptions? That change can start now.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="renewal" id="feel-again">
+<div class="renewal-container">
+<div class="renewal-visual">
+<img alt="Fresh herbal ingredients in a home kitchen" src="/lander/hierbas-curativas_1767987763/img/foto5.webp"/>
+</div>
+<div class="renewal-copy">
+<h2>The natural way to recover your true essence</h2>
+<p class="intro-text">Tired of constantly relying on medications and still feeling "unbalanced"? This is not another temporary solution. It's lasting transformation… and it starts in your own kitchen.</p>
+<div class="renewal-item">
+<span class="renewal-mark"></span>
+<div>
+<h3>The power is in the combination</h3>
+<p>Used individually, herbs help. But by mixing the right ones, their effect is amplified — 5x, 10x, even 20x. That's what most treatments fail to take advantage of.</p>
+</div>
+</div>
+<div class="renewal-item">
+<span class="renewal-mark"></span>
+<div>
+<h3>No exotic ingredients.</h3>
+<p>These detailed instructions use what you have: garlic, turmeric, cinnamon, lemon, and other common elements. Nothing exotic. Nothing confusing.</p>
+</div>
+</div>
+<div class="renewal-item">
+<span class="renewal-mark"></span>
+<div>
+<h3>Multiple solutions</h3>
+<p>From joint discomfort to mental confusion, sleep problems, or reduced energy, these preparations address the root, not just the symptoms.</p>
+</div>
+</div>
+<div class="renewal-item">
+<span class="renewal-mark"></span>
+<div>
+<h3>You are not broken — you just need support</h3>
+<p>Your body is not failing. It’s asking for help. This is where you start to provide it — naturally, safely, and effectively.</p>
+</div>
+</div>
+<a class="action-btn pulse-animation cta-button" href="">👉 I WANT THE Ancestral Herbs Manual TODAY!</a>
+</div>
+</div>
+</section>
+<section class="credibility-section">
+<div class="credibility-container">
+<div class="credibility-visual">
+<img alt="Satisfied user with the digital manual" src="/lander/hierbas-curativas_1767987763/img/foto6.webp"/>
+</div>
+<div class="credibility-copy">
+<h2>Why do thousands choose this manual over medications, Google searches, or guesswork?</h2>
+<div class="item-block">
+<span class="checkmark"></span>
+<div>
+<h3>It's organized by pain/discomfort</h3>
+<p>Digestion, rest, pain management, or any specific need.</p>
+</div>
+</div>
+<div class="item-block">
+<span class="checkmark"></span>
+<div>
+<h3>Exact recipes. Real results.</h3>
+<p>Forget searching the internet and mixing on your own. Here, each remedy is already tested: what plants to use, how much to put, and how to prepare it to work.</p>
+</div>
+</div>
+<div class="item-block">
+<span class="checkmark"></span>
+<div>
+<h3>Natural, but backed by research</h3>
+<p>Every formula uses safe herbs with genuine scientific foundation — no illusions or hollow claims.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="distinctive">
+<h2>Why have over 50,000 people chosen this manual?</h2>
+<p class="distinctive-intro">Because it combines the best of ancestral medicine with modern science — so you can regain your health, energy, and well-being naturally, without relying on pills for life.</p>
+<div class="distinctive-grid">
+<article class="distinctive-card">
+<div class="distinctive-icon">
+<img alt="Organized manual icon" src="/lander/hierbas-curativas_1767987763/img/4.webp"/>
+</div>
+<h3>Find what you need in seconds</h3>
+<p>Organized by health issue: pain, insomnia, digestion, energy. You find your discomfort and already have the exact remedy.</p>
+</article>
+<article class="distinctive-card">
+<div class="distinctive-icon">
+<img alt="Precise dosage icon" src="/lander/hierbas-curativas_1767987763/img/5.webp"/>
+</div>
+<h3>No trial and error. Directly to the result.</h3>
+<p>Each remedy includes what plants to use, how much to put, and how to prepare it — step by step, without confusion.</p>
+</article>
+<article class="distinctive-card">
+<div class="distinctive-icon">
+<img alt="Economy icon" src="/lander/hierbas-curativas_1767987763/img/6.webp"/>
+</div>
+<h3>You save time and money</h3>
+<p>Without wasting hours on Google or spending on 20 different jars. Everything you need in one place.</p>
+</article>
+<article class="distinctive-card">
+<div class="distinctive-icon">
+<img alt="Natural safety icon" src="/lander/hierbas-curativas_1767987763/img/7.webp"/>
+</div>
+<h3>100% natural and backed by science</h3>
+<p>Real plants, proven results. They are not fads or empty promises — it's what really works.</p>
+</article>
+</div>
+</section>
+<section class="alert-signals">
+<h2>Your body is warning you… Are you going to listen to it before it's too late?</h2>
+<p class="intro-text">That constant fatigue, that bloating after eating, those pains you "endure"… are not normal. They are warning signs — and if you ignore them, what is annoying today could be serious tomorrow.</p>
+<div class="alert-grid">
+<div class="alert-column positive">
+<h3>The first signs (your body asking for help)</h3>
+<ul>
+<li><span class="checkmark"></span><b>You wake up tired even if you sleep 8 hours:</b>It's not laziness. Your body isn't regaining energy — something is wrong.</li>
+<li><span class="checkmark"></span><b>Your digestion is off:</b>Bloating, gas, acidity. You feel like "everything doesn't agree with you". Your intestine is inflamed.</li>
+<li><span class="checkmark"></span><b>Pains that appear out of nowhere:</b>Knees, back, hands. It's not just age — it's chronic inflammation.</li>
+<li><span class="checkmark"></span><b>Frequent headaches:</b>It's not just stress. It could be poor circulation, accumulated toxins, or hormonal imbalance.</li>
+<li><span class="checkmark"></span><b>Your skin looks dull:</b>Breakouts, spots, dryness. Your body is trying to eliminate toxins wherever it can.</li>
+</ul>
+</div>
+<div class="alert-column negative">
+<h3>What happens if you keep ignoring it…</h3>
+<ul>
+<li><span class="xmark"></span><b>That "bearable" pain turns into arthritis:</b>What you can tolerate today with a pill, tomorrow limits your ability to walk.</li>
+<li><span class="xmark"></span><b>Your organs start to fail:</b>Liver, kidneys, intestines — they become saturated with toxins and stop functioning well. That's where serious diseases begin.</li>
+<li><span class="xmark"></span><b>You get sick all the time:</b>One cold after another. And each time it takes longer to recover.</li>
+<li><span class="xmark"></span><b>Tingling and numbness appear:</b>Hands, feet, legs. They are signs that your nerves are damaged.</li>
+<li><span class="xmark"></span><b>You lose memory and concentration:</b>You forget names, words. You can't focus. When your body is unwell, your mind suffers too.</li>
+</ul>
+</div>
+</div>
+<p class="reversible"><b>The good news:</b>All of this can be reversed if you act now.</p>
+<div class="emphasis-box">The<em>Ancient Herbs Manual</em>teaches you to read these signs — and use natural remedies to tackle the root of the problem, not just cover up the symptoms.</div>
+<a class="action-btn pulse-animation cta-button" href="" style="text-align:center;">👉 I WANT THE Ancient Herbs Manual TODAY!</a>
+</section>
+<section class="elements">
+<h2>Ingredients that you already have at home. Results you never imagined.</h2>
+<p class="intro-text">The<em>DIGITAL Ancient Herbs Manual</em>has natural remedies for more than 200 health problems — using things you already have in your kitchen. Here are some examples of what you will learn to use:</p>
+<div class="elements-grid">
+<div class="elements-card">
+<h3>🫒 Olive oil</h3>
+<p>Controls blood sugar and reduces inflammation — especially when combined with lemon and garlic.</p>
+</div>
+<div class="elements-card">
+<h3>🧄 Garlic</h3>
+<p>Lowers blood pressure naturally — but only if you prepare it in a certain way. The manual teaches you the 15-minute trick that multiplies its effect.</p>
+</div>
+<div class="elements-card">
+<h3>🫐 Blueberries</h3>
+<p>Small but powerful. They help control sugar and improve your memory — if you know how many to eat a day.</p>
+</div>
+<div class="elements-card">
+<h3>🫚 Ginger</h3>
+<p>Calms the stomach in minutes, reduces bloating, and lowers inflammation — especially if you mix it with lemon.</p>
+</div>
+<div class="elements-card">
+<h3>🍋 Lemon</h3>
+<p>Gives you energy and improves your digestion — especially in the "Spice Tonics" that are in the manual.</p>
+</div>
+<div class="elements-card">
+<h3>🍫 Dark chocolate</h3>
+<p>Yes, chocolate. Fights inflammation better than many medications — but it has to be the right kind and in the exact dose.</p>
+</div>
+</div>
+<div class="additional">
+<span>✅ 60-day money-back guarantee</span>🌍 Email delivery</div>
+</section>
+<section class="deal">
+<h2>Ready to feel good again?</h2>
+<div class="deal-container">
+<div class="deal-banner">LIMITED TIME OFFER</div>
+<div class="deal-body">
+<img alt="Ancestral Herbs Manual with included bonuses" class="deal-visual" src="/lander/hierbas-curativas_1767987763/img/foto1.webp" style="border-radius:15px;"/>
+<div class="deal-copy">
+<h3>Ancient Herbs Manual</h3>
+<p class="subheading">The complete DIGITAL manual for restoring your health naturally — combining ancestral wisdom with modern science</p>
+<h4>This is everything you receive today for only<b><span class="price-off"></span></b></h4>
+<ul>
+<li><span class="checkmark"></span><b>The Digital Ancient Herbs Manual</b>→ Today only<span class="price-off"></span><br/>Over 200 natural remedies for pain, insomnia, digestion, energy, and much more.</li>
+<li><span class="checkmark"></span><b>EXTRA #1: Herbal First Aid Kit</b> - <s><span class="price-bonus1"></span></s><br/></li>
+<li><span class="checkmark"></span><b>EXTRA #2: Deep Sleep Guide</b> - <s><span class="price-bonus2"></span></s><br/></li>
+<li><span class="checkmark"></span><b>EXTRA #3: Natural Remedies for Anxiety</b> - <s><span class="price-bonus3"></span></s><br/></li>
+<li><span class="checkmark"></span><b>EXTRA #4: Plants for Chronic Pain</b> - <s><span class="price-bonus1"></span></s><br/></li>
+<li><span class="checkmark"></span><b>EXTRA #5: 7-Day Detox</b> - <s><span class="price-bonus2"></span></s><br/></li>
+<li><span class="checkmark"></span><b>60-day guarantee</b>– If you don't see results, we refund your money. No questions asked.</li>
+<li><span class="checkmark"></span><b>Immediate access by email</b>- You receive it in your email and can view it from your phone or computer whenever you want.</li>
+</ul>
+<p class="price">
+<span class="current-price">All this today for only<b><span class="price-off"></span></b></span><br/>
+</p>
+<p class="urgency">⚡ Few copies left at this price — The offer ends soon</p>
+<a class="action-btn pulse-animation cta-button" href="">👉 YES, I WANT MY MANUAL NOW</a>
+</div>
+</div>
+</div>
+</section>
+<section class="extras">
+<h2>Order today and receive</h2>
+<p class="subtitle-text">¡<b>5 FREE BONUSES</b>!</p>
+<div class="extras-grid">
+<!-- BONUS 1 -->
+<article class="extras-card">
+<div class="extras-badge">BONUS #1</div>
+<h3>Natural Emergency Kit</h3>
+<div class="extras-mockup">
+<img alt="Herbal emergency kit guide" src="/lander/hierbas-curativas_1767987763/img/bono1.webp" style="border-radius:15px;"/>
+</div>
+<p>Quick remedies with plants for your home medicine cabinet: cuts, burns, stomach pain, bruises, and inflammation. All with things you have in your kitchen.</p>
+<div class="value-tag"><strike>Value<span class="price-bonus1"></span> </strike>- TODAY FREE</div>
+</article>
+<!-- BONUS 2 -->
+<article class="extras-card">
+<div class="extras-badge">BONUS #2</div>
+<h3>Deep Sleep Guide</h3>
+<div class="extras-mockup">
+<img alt="Herbal manual for improving sleep" src="/lander/hierbas-curativas_1767987763/img/bono2.webp" style="border-radius:15px;"/>
+</div>
+<p>The exact plants to shut down your mind, relax your body, and sleep through the night without waking up. No pills or side effects.</p>
+<div class="value-tag"><strike>Value<span class="price-bonus2"></span></strike>- TODAY FREE</div>
+</article>
+<!-- BONUS 3 -->
+<article class="extras-card">
+<div class="extras-badge">BONUS #3</div>
+<h3>Natural Remedies for Anxiety</h3>
+<div class="extras-mockup">
+<img alt="Guide to plants for calming anxiety" src="/lander/hierbas-curativas_1767987763/img/bono3.webp" style="border-radius:15px;"/>
+</div>
+<p>The most powerful plants to calm nerves and regain peace of mind. Simple preparations you can make every day.</p>
+<div class="value-tag"><strike>Value<span class="price-bonus3"></span></strike>- TODAY FREE</div>
+</article>
+<!-- BONUS 4 -->
+<article class="extras-card">
+<div class="extras-badge">BONUS #4</div>
+<h3>Plants for Chronic Pain</h3>
+<div class="extras-mockup">
+<img alt="Herbal anti-inflammatory manual" src="/lander/hierbas-curativas_1767987763/img/bono4.webp" style="border-radius:15px;"/>
+</div>
+<p>The most effective plants to calm pain and reduce inflammation naturally. No medications or side effects.</p>
+<div class="value-tag"><strike>Value<span class="price-bonus2"></span></strike>- TODAY FREE</div>
+</article>
+<!-- BONUS 5 -->
+<article class="extras-card">
+<div class="extras-badge">BONUS #5</div>
+<h3>7-Day Detox</h3>
+<div class="extras-mockup">
+<img alt="One-week detox plan" src="/lander/hierbas-curativas_1767987763/img/bono5.webp" style="border-radius:15px;"/>
+</div>
+<p>Day-by-day plan with specific teas and herbs to cleanse your body, eliminate toxins, and regain your energy in just one week.</p>
+<div class="value-tag"><strike>Value<span class="price-bonus1"></span></strike>- TODAY FREE</div>
+</article>
+</div>
+</section>
+<section class="promise">
+<div class="promise-container">
+<div class="promise-badge">
+<img alt="Satisfaction guarantee seal" src="/lander/hierbas-curativas_1767987763/img/garantialatam.png"/>
+</div>
+<div class="promise-copy">
+<h3>60-Day Guarantee — No Questions</h3>
+<p>Try it risk-free. If in 60 days you don't feel that you sleep better, have more energy, or feel less pain, we will refund every penny.</p>
+<p>You don't have to explain anything. Just write to us and we will return your money.</p>
+<p><b>It's that simple.</b>Either we change your life, or we refund your money.</p>
+</div>
+</div>
+</section>
+<section class="questions" id="faqs">
+<h2>Frequently Asked Questions</h2>
+<details class="question-item" open="">
+<summary>How is this manual different from what I find for free on the internet?</summary>
+<div class="response-text">On the internet, you find scattered and contradictory information. Here, everything is<b>organized by problem</b>(pain, insomnia, digestion, anxiety) with<b>exact recipes</b>: what plants to use, how much to put, and how to prepare them. No guessing. No trial and error. Just<b>proven remedies that work</b>.
+    </div>
+</details>
+<details class="question-item">
+<summary>How do I receive the manual after purchasing it?</summary>
+<div class="response-text">As soon as you pay, you receive an<b>email instantly</b>with the link to download the manual. You open it on your phone or computer, and it's yours forever.<b>You can consult it whenever you want</b>, without limits.</div>
+</details>
+<details class="question-item">
+<summary>Do I need to know about technology to use it?</summary>
+<div class="response-text">Not at all. If you know how to open an email and click a link, that's it. The manual opens on any phone, tablet, or computer.<b>It couldn't be easier</b>.
+    </div>
+</details>
+<details class="question-item">
+<summary>Is it complicated to make the remedies?</summary>
+<div class="response-text">No. Each remedy is explained<b>step by step</b>, like a cooking recipe. You use what you already have: cups, spoons, pots. And you get the ingredients at the supermarket or health store.<b>If you know how to make tea, you can make these remedies</b>.
+    </div>
+</details>
+<details class="question-item">
+<summary>How long does it take to take effect?</summary>
+<div class="response-text">Many people<b>notice changes in the first week</b>— especially in sleep, digestion, and energy. For chronic pain and inflammation, results are seen in<b>2 to 3 weeks</b>if you use it every day.</div>
+</details>
+<details class="question-item">
+<summary>I have never used natural remedies. Will it work for me?</summary>
+<div class="response-text">Yes, it's made for<b>people who are just starting out</b>. You don't need to know anything. Everything is explained simply and clearly. Anyone can follow it without problem.</div>
+</details>
+<details class="question-item">
+<summary>Is it safe for people over 50?</summary>
+<div class="response-text">Absolutely. The manual is<b>specifically made for people over 50</b>, with gentle and natural remedies. In any case, if you take medications or have any illness, it's always good to<b>consult with your doctor</b>before starting any new treatment.</div>
+</details>
+<details class="question-item">
+<summary>What happens if I try it and it doesn't work for me?</summary>
+<div class="response-text">You have<b>60 full days</b>to try it risk-free. If you don't see results, just write to us and we<b>will refund all your money</b>. No questions. No hassle.</div>
+</details>
+<details class="question-item">
+<summary>Do they only come with remedies or does it include more information?</summary>
+<div class="response-text">It includes much more. Besides the remedies, you learn<b>why you feel pain</b>, <b>what's happening in your body</b>, simple daily routines to feel better and a guide to know<b>which supplements are worth it</b>and which are just a waste.</div>
+</details>
+</section>
+<section class="finale">
+<div class="closing-wrap">
+<h2>Your body can heal — naturally</h2>
+<p>❌ You don't have to resign yourself to living with pain.</p>
+<p>❌ You don't need to depend on pills for the rest of your life.</p>
+<p>✅ You just need to give your body what it really needs.</p>
+<p class="emphasized">More than<b>50,000 people</b>have already regained their energy, sleep soundly, and live without pain — with natural remedies they prepared in their own kitchen.</p>
+<h3>Ready to feel good again?</h3>
+<a class="action-btn pulse-animation cta-button" href="">👉 YES, I WANT MY MANUAL NOW</a>
+<div class="benefits-note">✅ 60-day guarantee 🌍 You receive it by email instantly</div>
+</div>
+</section>
+<!-- HTML - Reemplazar el div mobile-sticky-cta completo -->
+<div class="mobile-sticky-cta">
+<div class="countdown-timer">⏰ Offer ends in:<span id="timer">13:33</span>
+</div>
+<a class="sticky-cta-button cta-button" href="">BUY NOW</a>
+</div>
+<!-- HTML - Agregar antes del cierre de </body> -->
+<div class="social-proof-notification" id="proofNotification">
+<div class="proof-content">
+<div class="proof-icon">✓</div>
+<div class="proof-text">
+<strong class="proof-name"></strong>
+<span class="proof-details"></span>
+</div>
+</div>
+</div>
+<script>
+const data = {
+  MX: { 
+    url: 'https://pay.hotmart.com/H103268311D?checkoutMode=10',
+    price: 358.00,
+    currency: 'MXN'
+  },
+  PE: { 
+    url: 'https://pay.hotmart.com/H103268311D?checkoutMode=10',
+    price: 57,
+    currency: 'S/'
+  },
+  CO: { 
+    url: 'https://pay.hotmart.com/H103268311D?checkoutMode=10',
+    price: 64.187,
+    currency: 'COP'
+  },
+  CL: { 
+    url: 'https://pay.hotmart.com/H103268311D?checkoutMode=10',
+    price: 18438,
+    currency: 'CLP'
+  },
+   UY: { 
+    url: 'https://pay.hotmart.com/H103268311D?checkoutMode=10',
+    price: 662,
+    currency: 'PESOS'
+  },
+  BO: { 
+    url: 'https://pay.hotmart.com/H103268311D?checkoutMode=10',
+    price: 117,
+    currency: 'Bs'
+  },
+  PY: { 
+    url: 'https://pay.hotmart.com/H103268311D?checkoutMode=10',
+    price: 117.087,
+    currency: 'Gs'
+  },
+  HN: { 
+    url: 'https://pay.hotmart.com/H103268311D?checkoutMode=10',
+    price: 444,
+    currency: 'L'
+  },
+  ES: { 
+    url: 'https://pay.hotmart.com/H103268311D?checkoutMode=10',
+    price: 15.60,
+    currency: '€'
+  },
+  GT: { 
+    url: 'https://pay.hotmart.com/H103268311D?checkoutMode=10',
+    price: 130,
+    currency: 'Q'
+  },
+  AR: { 
+    url: 'https://pay.hotmart.com/H103268311D?checkoutMode=10',
+    price: 16,
+    currency: 'US$'
+  },
+  EC: { 
+    url: 'https://pay.hotmart.com/H103268311D?checkoutMode=10',
+    price: 16,
+    currency: 'US$'
+  },
+  VE: { 
+    url: 'https://pay.hotmart.com/H103268311D?checkoutMode=10',
+    price: 16,
+    currency: 'US$'
+  },
+  PA: { 
+    url: 'https://pay.hotmart.com/H103268311D?checkoutMode=10',
+    price: 16,
+    currency: 'US$'
+  },
+  CR: { 
+    url: 'https://pay.hotmart.com/H103268311D?checkoutMode=10',
+    price: 16,
+    currency: 'US$'
+  },
+  SV: { 
+    url: 'https://pay.hotmart.com/H103268311D?checkoutMode=10',
+    price: 16,
+    currency: 'US$'
+  },
+  NI: { 
+    url: 'https://pay.hotmart.com/H103268311D?checkoutMode=10',
+    price: 16,
+    currency: 'US$'
+  },
+  DO: { 
+    url: 'https://pay.hotmart.com/H103268311D?checkoutMode=10',
+    price: 16,
+    currency: 'US$'
+  }
+ 
+};
+
+// Keitaro reemplaza CA automáticamente
+const country = 'CA';
+const subid = '12l79ktil5av';
+let url   = data[country]?.url      || 'https://pay.hotmart.com/H103268311D?checkoutMode=10';
+let price = data[country]?.price    || 16;  // precio base
+let curr  = data[country]?.currency || 'US$'; // moneda base
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Cambiar href en los botones
+  document.querySelectorAll(".cta-button").forEach(btn => {
+    btn.setAttribute("href", url + "&src=" + subid);
+  });
+
+  // Precio original
+  document.querySelectorAll(".price-off").forEach(el => {
+    el.textContent = price.toLocaleString('es-ES', { maximumFractionDigits: 2 }) + " " + curr;
+  });
+
+  // Precio x2
+  document.querySelectorAll(".price-all").forEach(el => {
+    let total = price * 4;
+    el.textContent = total.toLocaleString('es-ES', { maximumFractionDigits: 2 }) + " " + curr;
+  });
+
+  // Precio en 3 cuotas
+  document.querySelectorAll(".price-cuotas").forEach(el => {
+    let cuotas = (price * 2) / 3;
+    el.textContent = cuotas.toLocaleString('es-ES', { maximumFractionDigits: 1 }) + " " + curr + " /mes";
+  });
+
+  console.log("País:", country, "→ Precio base:", price, curr, "→ URL:", url);
+});
+
+
+document.addEventListener('DOMContentLoaded', quitarMasEnCategory);
+function quitarMasEnCategory() {
+  // Selecciona todos los span con clase category
+  const categorias = document.querySelectorAll('span.tag-city');
+
+  categorias.forEach(span => {
+    // Reemplaza todos los signos + en el texto
+    span.textContent = span.textContent.replace(/\+/g, ' ');
+  });
+}
+</script>
+<script>
+// Mostrar CTA sticky cuando el usuario llega a la imagen destacada
+document.addEventListener('DOMContentLoaded', function() {
+  const targetSection = document.querySelector('.value-props');
+  const stickyCta = document.querySelector('.mobile-sticky-cta');
+  
+  if (!targetSection || !stickyCta) return;
+  
+  // Opciones del observer
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1 // Se activa cuando el 10% de la sección es visible
+  };
+  
+  // Crear el observer
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // La sección está visible, mostrar el CTA
+        stickyCta.classList.add('show');
+      }
+    });
+  }, observerOptions);
+  
+  // Observar la sección
+  observer.observe(targetSection);
+});
+</script>
+<script>
+// Countdown timer
+document.addEventListener('DOMContentLoaded', function() {
+  let totalSeconds = (7 * 60) + 33; // 7 min 33 seg
+  const timerElement = document.getElementById('timer');
+  const countdownContainer = document.querySelector('.countdown-timer');
+  
+  if (!timerElement || !countdownContainer) return;
+  
+  function updateTimer() {
+    if (totalSeconds <= 0) {
+      // Cambiar el mensaje cuando llega a 0
+      countdownContainer.innerHTML = '⚠️ ¡TIEMPO AGOTADO! - Últimas copias disponibles';
+      return;
+    }
+    
+    const hours = Math.floor(totalSeconds / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+    
+    timerElement.textContent = 
+      String(hours).padStart(2, '0') + ':' + 
+      String(minutes).padStart(2, '0') + ':' + 
+      String(seconds).padStart(2, '0');
+    
+    totalSeconds--;
+  }
+  
+  // Actualizar inmediatamente
+  updateTimer();
+  
+  // Actualizar cada segundo
+  setInterval(updateTimer, 1000);
+});
+</script>
+<script>
+ 
+
+// Social Proof Notifications
+document.addEventListener('DOMContentLoaded', function() {
+  const notification = document.getElementById('proofNotification');
+  if (!notification) return;
+  
+  // Obtener el país detectado (el mismo que usas para precios)
+  const country = 'CA';
+  
+  // Mapeo de códigos a nombres completos
+  const countryNames = {
+    MX: 'México',
+    PE: 'Perú',
+    CO: 'Colombia',
+    CL: 'Chile',
+    UY: 'Uruguay',
+    BO: 'Bolivia',
+    PY: 'Paraguay',
+    HN: 'Honduras',
+    ES: 'España',
+    GT: 'Guatemala',
+    AR: 'Argentina',
+    EC: 'Ecuador'
+  };
+  
+  // Obtener nombre completo del país o usar genérico
+  const detectedCountry = countryNames[country] || 'tu misma ciudad';
+  
+  // Lista de compradores ficticios
+  const names = [
+    'María Pérez',
+    'Carla Di Mariani',
+    'Ana Lanfranco',
+    'José Castillo',
+    'Laura Gómez',
+    'Diego Siciliani',
+    'Carmen Torres',
+    'Alexandra Díaz',
+    'Patricia Ruiz',
+    'Fernanda Castro',
+    'Isabel Morales',
+    'Graciela Vásquez',
+    'Marta Benítez',
+    'Estela Navarro',
+    'Norma Aguirre',
+    'Silvia Contreras',
+    'Beatriz Figueroa',
+    'Adriana Rojas',
+    'Liliana Sosa',
+    'Mónica Peralta',
+    'Susana Medina',
+    'Gloria Ramos',
+    'Miriam Ortega',
+    'Alberto Campos',
+    'Héctor Zavala',
+    'Ernesto Paredes',
+    'Javiera Herrera'
+  ];
+  
+  const times = ['1 hora', '23 minutos', '45 minutos', '2 horas', '15 minutos', '38 minutos', '52 minutos', '27 minutos', '41 minutos'];
+  
+  let currentIndex = 0;
+  
+  function showNotification() {
+    const name = names[currentIndex % names.length];
+    const time = times[Math.floor(Math.random() * times.length)];
+    
+    const nameElement = notification.querySelector('.proof-name');
+    const detailsElement = notification.querySelector('.proof-details');
+    
+    nameElement.textContent = name + ', de ' + detectedCountry;
+detailsElement.innerHTML = 'Acaba de comprar el manual.<br>Hace ' + time + ' • Compra Verificada';
+    
+    // Mostrar notificación
+    notification.classList.add('show');
+    
+   // Ocultar después de 7 segundos
+setTimeout(() => {
+  notification.classList.remove('show');
+}, 7000);
+
+currentIndex++;
+}
+
+// Mostrar primera notificación después de 5 segundos de carga
+setTimeout(showNotification, 5000);
+
+// Repetir cada 27 segundos (7 visible + 20 de pausa = 27 total)
+setInterval(showNotification, 27000); // <-- CAMBIAR A 27000
+});
+</script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '797627496419725');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" src="https://www.facebook.com/tr?id=797627496419725&amp;ev=PageView&amp;noscript=1" style="display:none" width="1"/></noscript>
+<!-- End Meta Pixel Code -->
+<script crossorigin="anonymous" data-cf-beacon='{"version":"2024.11.0","token":"44ed9f3dbe10487ab34f9d1c857eb5a9","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' defer="" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" src="/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"></script>
+</body>
+</html>
